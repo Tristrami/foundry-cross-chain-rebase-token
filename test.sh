@@ -1,0 +1,21 @@
+# Deploy
+make deploy RPC_URL="$ETH_SEPOLIA_RPC_URL" SENDER="$SEPOLIA_SENDER" ACCOUNT="sepoliaKey"
+make deploy RPC_URL="$ARB_SEPOLIA_RPC_URL" SENDER="$SEPOLIA_SENDER" ACCOUNT="sepoliaKey"
+# Verify
+make verify ADDR="0x1a596EF4c034A66CBA457C87260b119988cd4Fe7" NAME="src/MiaoToken.sol:MiaoToken" CHAIN="sepolia"
+make verify ADDR="0x26c39daf444c0653bac7611153481500754655e3" NAME="src/MiaoTokenPool.sol:MiaoTokenPool" CHAIN="sepolia"
+make verify ADDR="0x8bbbabf2b0a7302df27b2b997331276926b90a1b" NAME="src/Vault.sol:Vault" CHAIN="sepolia"
+
+make verify ADDR="0x0273c4b1e2682d0c317a1571aa16f060cf6c5192" NAME="src/MiaoToken.sol:MiaoToken" CHAIN="arbitrum-sepolia"
+make verify ADDR="0x0756a4434da1bfe16e2e29fe0dc7f7b7df4745af" NAME="src/MiaoTokenPool.sol:MiaoTokenPool" CHAIN="arbitrum-sepolia"
+make verify ADDR="0x5fc0d8d815c1697bb63d4074de66456157549876" NAME="src/Vault.sol:Vault" CHAIN="arbitrum-sepolia"
+
+# Configure
+make configure RPC_URL="$ETH_SEPOLIA_RPC_URL" SENDER="$SEPOLIA_SENDER" ACCOUNT="sepoliaKey"
+make configure RPC_URL="$ARB_SEPOLIA_RPC_URL" SENDER="$SEPOLIA_SENDER" ACCOUNT="sepoliaKey"
+# Deposit
+make deposit RPC_URL="$ETH_SEPOLIA_RPC_URL" SENDER="$SEPOLIA_SENDER" ACCOUNT="sepoliaKey" AMOUNT="1000000000000000"
+make get-balance ADDR="0x0273C4B1e2682D0C317a1571aa16F060cF6C5192" USER="$SEPOLIA_SENDER" RPC_URL="$ARB_SEPOLIA_RPC_URL"
+make get-balance ADDR="0x1a596EF4c034A66CBA457C87260b119988cd4Fe7" USER="$SEPOLIA_SENDER" RPC_URL="$ETH_SEPOLIA_RPC_URL"
+# Send
+make send RECEIVER="$SEPOLIA_SENDER" AMOUNT="100000000000000" SELECTOR="3478487238524512106" RPC_URL="$ETH_SEPOLIA_RPC_URL" SENDER="$SEPOLIA_SENDER" ACCOUNT="sepoliaKey"

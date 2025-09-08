@@ -1,0 +1,31 @@
+{
+
+  "11155111": [
+    {
+      "remoteChainSelector": 3478487238524512106,
+      "allowed": true,
+      "remotePoolAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "remoteTokenAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "outboundRateLimiterIsEnabled": false,
+      "outboundRateLimiterCapacity": 0,
+      "outboundRateLimiterRate": 0,
+      "inboundRateLimiterIsEnabled": false,
+      "inboundRateLimiterCapacity": 0,
+      "inboundRateLimiterRate": 0
+    }
+  ],
+  "421614": [
+    {
+      "remoteChainSelector": 16015286601757825753, 
+      "allowed": true,
+      "remotePoolAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "remoteTokenAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "outboundRateLimiterIsEnabled": false,
+      "outboundRateLimiterCapacity": 0,
+      "outboundRateLimiterRate": 0,
+      "inboundRateLimiterIsEnabled": false,
+      "inboundRateLimiterCapacity": 0,
+      "inboundRateLimiterRate": 0
+    }
+  ] 
+}

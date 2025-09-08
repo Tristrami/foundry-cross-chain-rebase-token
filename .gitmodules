@@ -1,0 +1,12 @@
+[submodule "lib/chainlink-local"]
+	path = lib/chainlink-local
+	url = https://github.com/smartcontractkit/chainlink-local
+[submodule "lib/ccip"]
+	path = lib/ccip
+	url = https://github.com/smartcontractkit/ccip
+[submodule "lib/foundry-devops"]
+	path = lib/foundry-devops
+	url = https://github.com/Cyfrin/foundry-devops
+[submodule "lib/chainlink-brownie-contracts"]
+	path = lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
