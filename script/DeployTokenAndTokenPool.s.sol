@@ -68,7 +68,7 @@ contract DeployTokenAndTokenPool is Script {
             rmnProxyAddress, 
             routerAddress
         );
-        // Grant burn and mint role to token pool
+        // Set token admin as the token owner
         miaoToken.grantRole(miaoToken.getMintAndBurnRole(), address(tokenPool));
         // Set token pool admin to the token owner
         RegistryModuleOwnerCustom(registryModuleOwnerCustomAddress).registerAdminViaOwner(address(miaoToken));
